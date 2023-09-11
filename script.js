@@ -2,7 +2,7 @@ const api="https://type.fit/api/quotes"
 const displayQuote =document.getElementById("quote-display")
 const displayAuthor =document.getElementById("author-display")
 const buttonForNewQuote =document.getElementById("new-quote-btn")
-const buttonShareTweet =document.getElementById("tweet")
+const buttonShareTweet =document.getElementById("share-tweet")
 // const textContainer =document.getElementById("text-container")
 let quotes=''
 let quotesData=''
@@ -39,11 +39,16 @@ const getNewQuote=()=>{
 }
 
 const shareTweet =()=>{
+    console.log("tweet")
     let tweetPost = `https://twitter.com/intent/tweet?text=${quotesData.text} by ${author[0]} `
     window.open(tweetPost)
 }
 getQuotes()
 buttonForNewQuote.addEventListener('click',getQuotes)
 
-buttonShareTweet.addEventListener('click',shareTweet)
+buttonShareTweet.addEventListener('click',(e)=>{
+    console.dir(e.target)
+    //  shareTweet
+
+})
 

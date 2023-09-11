@@ -33,35 +33,36 @@
 }
 
 .img-container {
-    height: 100px;
-    width: 200px;
+    height: 109px;
+    width: 217px;
     position: absolute;
-    top: -30px;
-    right: -60px;
-   
+    top: -56px;
+    right: -78px;
+    
     transform: rotate(40deg);
     display: flex;
     align-items: flex-end;
     justify-content: center;
     box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.232);
 }
-.share-img-text{
-    
-}
+
+
 
 #tweet {
     height: 30px;
     padding: 10px;
-    
+
     animation: rotweet 1s linear;
+    cursor: pointer;
 }
-.share{
+
+.share {
     height: 30px;
     /* transform: rotate(-40deg); */
     padding: 10px;
     margin: -5px;
-    color:  rgba(0, 89, 255, 0.89);
-   
+    color: rgba(0, 89, 255, 0.89);
+
 
 }
 

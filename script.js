@@ -48,7 +48,7 @@ buttonForNewQuote.addEventListener('click',getQuotes)
 
 buttonShareTweet.addEventListener('click',(e)=>{
     console.dir(e.target)
-    //  shareTweet
+     shareTweet()
 
 })
 

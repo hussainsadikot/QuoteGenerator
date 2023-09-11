@@ -3,6 +3,7 @@ const displayQuote =document.getElementById("quote-display")
 const displayAuthor =document.getElementById("author-display")
 const buttonForNewQuote =document.getElementById("new-quote-btn")
 const buttonShareTweet =document.getElementById("tweet")
+// const textContainer =document.getElementById("text-container")
 let quotes=''
 let quotesData=''
 let author=''
@@ -20,7 +21,7 @@ const getQuotes = async ()=>{
 const getNewQuote=()=>{
     let random=Math.floor(Math.random()*10)
     quotesData= quotes[random]
-    console.log(quotes[random].text)
+    // console.log(quotes[random].text)
     displayQuote.innerText=`${quotes[random].text}`
     author=quotesData.author.split(',')
     quotesData.author==null
@@ -28,7 +29,12 @@ const getNewQuote=()=>{
     : displayAuthor. innerText=`${author[0]}`
     
     
-
+    // let animTextSet =textContainer.dataset.aos
+    // console.log(animTextSet)
+    // if(animTextSet==''){
+    //     textContainer.dataset.aos='zoom-in'
+        
+    // }
     // console.log(author)
 }
 
